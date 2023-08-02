@@ -1,0 +1,22 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "reactnative-template",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"remoteUser": "node",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	"runArgs": [
+		"--network=host"
+	],
+	"mounts": [
+		"source=${localEnv:HOME}/Android/Sdk,target=/home/node/Android/sdk,type=bind,consistency=cached"
+	],
+	"postCreateCommand": "cd AwesomeProject; npm i ."
+}
