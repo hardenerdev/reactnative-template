@@ -2,6 +2,8 @@
 
 No more dependencies using [vscode](https://code.visualstudio.com/) and [docker](https://www.docker.com/)
 
+📱❤️🐋
+
 ## step by step
 
 1. Install [docker](https://docs.docker.com/engine/install/) within the preferred operating system.
@@ -11,5 +13,11 @@ No more dependencies using [vscode](https://code.visualstudio.com/) and [docker]
 git clone git@github.com:hardenerdev/reactnative-template.git
 ```
 4. Open directory in container using `Ctrl + P`, choose `Dev Containers: Open Folder in Container...` and open repository folder.
+5. Run an Android emulator using [android studio](https://developer.android.com/studio)
+6. Open a terminal inside vscode (``Ctrl + Shift + ` ``) and execute the following command
+
+```bash
+npm run android
+```
 
 📱❤️🐋
